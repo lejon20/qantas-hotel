@@ -13,10 +13,8 @@ const Main = styled.div`
 function App() {
   return (
     <Main>
-      <div>
-        <Logo size={LogoSize.small} />
-        <HotelList />
-      </div>
+      <Logo size={LogoSize.small} />
+      <HotelList />
     </Main>
   );
 }

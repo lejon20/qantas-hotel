@@ -10,6 +10,7 @@ const Wrapper = styled.div``;
 // hardcoded for now
 const searchTerm = "Sydney";
 const searchCategory = SearchCategory.Hotel;
+const nights = 1;
 
 const HotelList = () => {
   const [order, setOrder] = useState(PriceSortingOrder.HighToLow);
@@ -37,7 +38,7 @@ const HotelList = () => {
         onSort={setOrder}
       />
       {sortedData.map((hotelData) => (
-        <HotelListItem key={hotelData.id} data={hotelData} />
+        <HotelListItem key={hotelData.id} data={hotelData} nights={nights} />
       ))}
     </Wrapper>
   );
